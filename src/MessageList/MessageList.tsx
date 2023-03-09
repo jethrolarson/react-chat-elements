@@ -140,6 +140,7 @@ const MessageList: FC<IMessageListProps> = ({
             key={i as Key}
             {...(x as any)}
             // data={x}
+            renderText={props.renderText}
             onOpen={props.onOpen && ((e: React.MouseEvent<HTMLElement>) => onOpen(x, i, e))}
             onPhotoError={props.onPhotoError && ((e: React.MouseEvent<HTMLElement>) => onPhotoError(x, i, e))}
             onDownload={props.onDownload && ((e: React.MouseEvent<HTMLElement>) => onDownload(x, i, e))}

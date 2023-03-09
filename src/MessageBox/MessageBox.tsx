@@ -141,7 +141,7 @@ const MessageBox: React.FC<MessageBoxType> = ({ focus = false, notch = true, sty
                 })}
               >
                 {props.retracted && <MdBlock />}
-                {props.text}
+                {props.renderText ? props.renderText(props.text) : props.text}
               </div>
             )}
 

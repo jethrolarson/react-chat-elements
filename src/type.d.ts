@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
 /**
  * IChatItemProps Interface
@@ -537,6 +537,7 @@ export interface IMessageBoxProps {
   onMeetingVideoLinkClick?: React.MouseEventHandler
   styles?: React.CSSProperties
   notchStyle?: React.CSSProperties
+  renderText?: (text: string) => React.ReactElement
 }
 
 /**
@@ -605,6 +606,7 @@ export interface IMessageListProps {
   onMeetingLinkClick?: MessageListEvent
   messageBoxStyles?: React.CSSProperties
   notchStyle?: React.CSSProperties
+  renderText?: (text: string) => ReactElement
 }
 
 /**
